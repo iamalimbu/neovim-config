@@ -8,6 +8,7 @@ endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 
+    Plug 'morhetz/gruvbox'
     " Better Syntax Support
     Plug 'sheerun/vim-polyglot'
     " File Explorer
@@ -25,4 +26,12 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     Plug 'mhinz/vim-startify'
 
+    Plug 'mhinz/vim-signify'
+    Plug 'tpope/vim-fugitive'
+    Plug 'tpope/vim-rhubarb'
+    Plug 'junegunn/gv.vim'
+
 call plug#end()
+
+colorscheme gruvbox
+set background=dark
