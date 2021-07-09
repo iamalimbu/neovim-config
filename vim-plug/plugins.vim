@@ -30,6 +30,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'tpope/vim-fugitive'
     Plug 'tpope/vim-rhubarb'
     Plug 'junegunn/gv.vim'
+    Plug 'OmniSharp/omnisharp-vim'
+
+    Plug 'scrooloose/nerdtree'
 
 call plug#end()
 
