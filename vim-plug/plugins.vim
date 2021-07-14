@@ -1,11 +1,3 @@
-" auto-install vim-plug
-if empty(glob('~/.config/nvim/autoload/plug.vim'))
-  silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  "autocmd VimEnter * PlugInstall
-  "autocmd VimEnter * PlugInstall | source $MYVIMRC
-endif
-
 call plug#begin('~/.config/nvim/autoload/plugged')
 
     Plug 'morhetz/gruvbox'
@@ -29,12 +21,29 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'mhinz/vim-signify'
     Plug 'tpope/vim-fugitive'
     Plug 'tpope/vim-rhubarb'
+
     Plug 'junegunn/gv.vim'
     Plug 'OmniSharp/omnisharp-vim'
 
     Plug 'scrooloose/nerdtree'
+    
+    " Note taking Plug
+    Plug 'vimwiki/vimwiki'
+
+    Plug 'prabirshrestha/asyncomplete.vim'
+    Plug 'prabirshrestha/async.vim'
+
+    " Track the engine.
+    Plug 'SirVer/ultisnips'
+
+    " Snippets are separated from the engine. Add this if you want them:
+    Plug 'honza/vim-snippets'
+
+    Plug 'dense-analysis/ale'
 
 call plug#end()
 
 colorscheme gruvbox
+
 set background=dark
+
